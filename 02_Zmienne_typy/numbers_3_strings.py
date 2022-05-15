@@ -1,30 +1,54 @@
-numbers = '352687'
-mixed = 'jfioj89wg8w'
+#1
+print('\n#1 Stwórz zmienną przechowującą wyraz o długości nieparzystej większej niż 7 i\n'
+      '  zwróć łańcuch złożony z trzech środkowych znaków danego ciągu.\n')
+word = 'dlugieslowo'
 
-print(f'Ciąg {numbers} zawiera same cyfry', numbers.isdigit())
-print(f'Ciąg {mixed} zawiera same cyfry', mixed.isdigit())
+print(word)
 
-txt = 'Mata'
-centered_txt = txt.center(10, '*')
-print(centered_txt)
+mid_index = word[int(len(word)//2)]
+mid_idnex_after = word[int(len(word)//2 + 1)]
+mid_idnex_befor = word[int(len(word)//2 - 1)]
 
-# ---
-url = 'www.example.com'
-cut_url = url.lstrip('w')
-print(cut_url)
+word_3letter = mid_idnex_befor + mid_index + mid_idnex_after
 
+print('Słowo z 3 środkowych liter: ', word_3letter)
+#2
+print('\n#2 Stwórz dwie zmienne s1 i s2 przechowujące dowolne wyrazy, utwórz nowy łańcuch s3,\n'
+      'dołączając s2 w środku s1.' )
 
-#----
+print('')
+s1 = 'miasto'
+s2 = 'lata'
 
-password = 'AdminAdminTakNieRobHasla'
+print('s1:', s1)
+print('s2:', s2)
 
-incluedes_at_least_1_upper = password.isalpha() and (not password.islower() and not password.isupper())
+s3 = print('s3:',s1[:3] + s2 +  s1[3:])
+#3
+print('\n3# Do zmiennej quote przypisz zdanie: \n"Honesty is the first chapter in the book of wisdom.”')
 
-print(incluedes_at_least_1_upper)
+quote = "Honesty is the first chapter in the book of wisdom."
 
-#----
-fruit = 'banana'
+print('\nPolicz wszystkie znaki w napisie')
+print('Liczba znaków wynosi:', len(quote))
 
-counter = fruit.count('na')
+print('\nNie modyfikując zmiennej wyświetl słowo wisdom')
+print(quote[-8:-1])
 
-print(counter)
+print('\nWyświetl tylko pierwszą połowę tekstu')
+print(quote[:int(len(quote)//2)+1])
+
+print('\nWyświetl tylko kropkę')
+print(quote[-1:])
+
+print('\nWyświetl od połowy tylko co trzecią literę cytatu')
+print(quote[int(len(quote)//2)::3])
+
+print('\nWyświetl ‘Hnsyi h is hpe ntebo fwso.')
+print(quote[::2])
+
+print('\nWyświetl cały cytat odwrotnie')
+print(quote[::-1])
+
+print('\nZamień wisdom na słowo friendship')
+print(quote.replace('wisdom', 'friendship'))
