@@ -11,7 +11,7 @@ price_of_trip = trip_fuel_usage * price_of_fuel
 
 # z możliwością wyboru danych - zadanie domowe
 
-print('\n#2\n')
+print('\n#2 wprowadzając dane użytkownika\n')
 
 average_fuel_usage = float(input('Give Your vehical average fuel usage: '))
 predicted_distance = float(input('Whats Your predicted distance: '))
