@@ -12,18 +12,7 @@ mid_idnex_befor = word[int(len(word)//2 - 1)]
 word_3letter = mid_idnex_befor + mid_index + mid_idnex_after
 
 print('Słowo z 3 środkowych liter: ', word_3letter)
-#2
-print('\n#2 Stwórz dwie zmienne s1 i s2 przechowujące dowolne wyrazy, utwórz nowy łańcuch s3,\n'
-      'dołączając s2 w środku s1.' )
 
-print('')
-s1 = 'miasto'
-s2 = 'lata'
-
-print('s1:', s1)
-print('s2:', s2)
-
-s3 = print('s3:',s1[:3] + s2 +  s1[3:])
 #3
 print('\n3# Do zmiennej quote przypisz zdanie: \n"Honesty is the first chapter in the book of wisdom.”')
 
