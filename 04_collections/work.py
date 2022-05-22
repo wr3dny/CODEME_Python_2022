@@ -1,10 +1,3 @@
-#1 Stwórz listę przedmiotów, które zabierzesz na samotną wyprawę w góry. Elementy na liście posortuj alfabetycznie,
-# a następnie wyświetl.
-
-mountain_items = ['Pickaxe', 'Water', 'Warm boots', 'Flashligth', 'Tent', 'Strong will']
-mountain_items.sort()
-print(mountain_items)
-
 # Pobierz od użytkownika 10 liczb, wyświetl tylko te, które są nieparzyste.
 '''
 while i <= 10:

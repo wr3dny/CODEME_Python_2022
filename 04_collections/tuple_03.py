@@ -1,4 +1,4 @@
-# 3Stwórz krotkę liczb całkowitych. Poproś użytkownika o podanie dowolnej liczby.
+# 3 Stwórz krotkę liczb całkowitych. Poproś użytkownika o podanie dowolnej liczby.
 # Jeśli liczba znajduje się na krotce wyswietl jej indeks.
 
 tuple_numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
