@@ -4,14 +4,15 @@
 txt = input('Give me Your word: ')
 
 # pętla
-'''
+
 print('-----')
-i = 2
-while i < len(txt):
-    print(i)
-    i += 2
-'''
+
+for i in range(len(txt)):
+    if (i % 2 != 0):
+        print(txt[i])
+
 # slicing
+
 print('-----')
 
 sliced_txt = txt[1::2]

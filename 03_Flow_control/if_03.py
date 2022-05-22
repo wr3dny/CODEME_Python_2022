@@ -1,24 +1,17 @@
-# W podanym przez użytkownika ciągu wejściowym policz wszystkie małe litery, wielkie litery, cyfry i znaki specjalne.
+#3 Stwórz skrypt, który przyjmuje 3 opinie użytkownika o książce. Oblicz średnią opinię o książce.
+# W zależności od wyniku dodaj komunikaty. Jeśli uzytkownik ocenił książkę na ponad 7 -
+# bardzo dobry, ocena 5-7 przeciętna, 4 i mniej - nie warta uwagi.
 
-txt = input('Podaj dowolny ciąg znaków -> ')
+heroes = int(input('Rate heroes: '))
+story = int(input('Rate story'))
+lenght = int(input('Rate lenght: '))
 
-counter_num = 0
-counter_up = 0
-counter_low = 0
+rate = (heroes + story + lenght) / 3
 
-for l in txt:
-    if l.isdigit():
-        counter_num += 1
-        continue
+if rate >= 7:
+    print('Worth of Your time')
+elif rate >= 5:
+    print('Could be better')
+else:
+    print('Unworthy piece of paper')
 
-    if l.isupper():
-        counter_up += 1
-        continue
-
-    if l.islower():
-        counter_low += 1
-
-print(f'Text: {txt}')
-print("Cyfry", counter_num)
-print("Duże litery", counter_up)
-print("Małe litery", counter_low)
