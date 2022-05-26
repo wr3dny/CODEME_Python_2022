@@ -17,6 +17,29 @@ top_ten_names = [norway_names + norway_names + uk_names + estonia_names + finlan
                  netherlands_names + romania_names + switzerland_names]
 
 
+norway_names = set(norway_names)
+print(norway_names)
 
-print(top_ten_names)
+
+#
+# top_ten_names.split()
+#
+# print(top_ten_names)
+# ttn = list(set(top_ten_names))
+#
+#
+# names_counter = {}
+
+# for name in top_ten_names:
+#     if name in names_counter:
+#         names_counter[word] += 1
+#     else:
+#         names_counter[word] = 1
+#
+# for k, v in words_counter.items():
+#     print(f'- {k} : {v}')
+#
+# print(top_ten_names)
+#print(names_counter)
+
 
