@@ -12,7 +12,7 @@ if b > a and b > c:
 if c > b and c > a:
     print('The biggest is \'c\'')
 elif a == b or b == c or c == a:
-    print('There ismore then one biggest number')
+    print('There is more then one biggest number')
 
-d = [a, b, c]
-print(sorted(d, reverse=True))
+print(sorted([a, b, c], reverse=True))
+

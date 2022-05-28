@@ -14,7 +14,7 @@ player_number_turns = int(input('Ile chcesz rund rozegrać: '))
 options_list = ('kamień', 'nożyce', 'papier')
 
 for player_turns in range(0, player_number_turns):
-    CPU_choice = random.choices(options_list)
+    CPU_choice = random.choice(options_list)
     player_choice = input('Podaj swój wybór kamień / nożyce / papier: ')
     player_number_turns += 1
     if ('kamień' in CPU_choice and 'kamień' in player_choice) or ('papier' in CPU_choice and 'papier' in player_choice)\

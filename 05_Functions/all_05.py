@@ -15,17 +15,17 @@ def cold_hot(number):
         for i in range(0, 6):
             player_number = int(input('Your number: '))
             diff = CPU_number - player_number
-    if player_number == CPU_number:
-        print('Wygrywasz')
-    else:
-        if 0 < diff < 15:
-           print('Ciepło')
-        if 15 <= diff < 30:
-           print('Chłodno')
-        if 30 <= diff < 60:
-           print('Zimno')
-        if 61 <= diff <= 99:
-          print('Piekło zamarzło')
+        if player_number == CPU_number:
+            print('Wygrywasz')
+        else:
+            if 0 < diff < 15:
+                print('Ciepło')
+            if 15 <= diff < 30:
+                print('Chłodno')
+            if 30 <= diff < 60:
+                print('Zimno')
+            if 61 <= diff <= 99:
+                print('Piekło zamarzło')
     print('Koniec')
 
-cold_hot(15)
+cold_hot(1)

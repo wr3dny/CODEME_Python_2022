@@ -45,7 +45,7 @@ for person in people:
             print(value, end=" ")
     print()
 
-"""
+
 famous_persons = vfamous_persons.split('\'')
 
 for n , s , o in famous_persons:
@@ -60,4 +60,3 @@ famous_persons = vfamous_persons.split('\'')
 
 for n , s , o in famous_persons:
     print(f'Imię {n} nazwisko {s} a zawód to: {o}')
-"""
