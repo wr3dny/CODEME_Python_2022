@@ -11,19 +11,87 @@ italy_names = ['Sofia', 'Giulia', 'Aurora', 'Ginevra', 'Alice', 'Beatrice', 'Emm
 moldova_names = ['Sofia', 'Amelia', 'Anastasia', 'Maria', 'Daria', 'Victoria', 'Eva', 'Alexandra', 'Evelina', 'Andreea']
 netherlands_names = ['Julia', 'Mila', 'Emma', 'Nora', 'Olivia', 'Sophie', 'Tess', 'Milou', 'Zoë', 'Yara']
 romania_names = ['Sofia', 'Amelia', 'Anastasia', 'Maria', 'Victoria', 'Daria', 'Eva', 'Alexandra', 'Evelina', 'Andreea']
-switzerland_names = ['Mia', 'Emma', 'Mila', 'Emilia', 'Lina', 'Sofia', 'Elena', 'Lea', 'Alina', 'Laura', 'Laura', 'Laura']
+switzerland_names = ['Mia', 'Emma', 'Mila', 'Emilia', 'Lina', 'Sofia', 'Elena', 'Lea', 'Alina', 'Laura']
 
-top_ten_names = [norway_names + norway_names + uk_names + estonia_names + finland_names + italy_names + moldova_names +
-                 netherlands_names + romania_names + switzerland_names]
-print(type(norway_names))
+top_ten_names = []
 
-norway_names_eleven = norway_names.append('Jaja')
+# for name in norway_names:
+for item in norway_names:
+     top_ten_names.append(item)
+for item in belgium_names:
+     top_ten_names.append(item)
+for item in uk_names:
+    top_ten_names.append(item)
+for item in estonia_names:
+    top_ten_names.append(item)
+for item in finland_names:
+    top_ten_names.append(item)
+for item in italy_names:
+    top_ten_names.append(item)
+for item in moldova_names:
+    top_ten_names.append(item)
+for item in netherlands_names:
+    top_ten_names.append(item)
+for item in romania_names:
+    top_ten_names.append(item)
+for item in switzerland_names:
+    top_ten_names.append(item)
 
-print(norway_names)
+top_names = []
+
+top_ten_names = list(top_ten_names)
+
+for name in top_ten_names:
+    top_names.append(top_ten_names(name))
+
+
+# def names_repeat(list):
+#     count = 0
+#     for name in list
+
+print(top_ten_names)
+
+# another_form = {}
+#
+# for i in top_ten_names:
+#     another_form[i] = top_ten_names(i)
+#
+# print(another_form)
+
+repeating_names = []
+index = 0
+
+for name in top_ten_names:
+    if name in repeating_names:
+        index += 1
+    else:
+        repeating_names.append(name)
+
+
+print(len(repeating_names))
+
+
+
+# for names in top_ten_names:
+#     if names in top_ten_names[:-1]:
+#         print(names, end = ' \n ')
+#     else:
+#         print(names)
+
+# for names in norway_names:
+#     top_ten_names.extend(names)
+
+# print(top_ten_names)
+
+
+#
+# norway_names_eleven = norway_names.append('Jaja')
+#
+# print(norway_names)
 
 # print(tuple(*norway_names))
 #
-# new_names_list = [tuple(*norway_names), tuple(*belgium_names), tuple(*uk_names)]
+# ?new_names_list = [tuple(*norway_names), tuple(*belgium_names), tuple(*uk_names)]
 #
 # bylo = set()
 # uniq = []
@@ -35,15 +103,14 @@ print(norway_names)
 #         uniq.append()
 #         bylo.add()
 
-# for names in new_names_list:
-#     if names in new_names_list[:-1]:
-#
+# for names in top_ten_names:
+#     if names in top_ten_names[:-1]:
 #         print(names, end = ' | \n')
 #     else:
 #         print(names)
 # print()
 #
-# print(list(enumerate(new_names_list)))
+# print(list(enumerate(top_ten_names)))
 
 # print(new_names_list)
 # jakas_lista = []
@@ -71,11 +138,7 @@ print(norway_names)
 # for names in romania_names:
 #     if names
 
-# for names in top_ten_names:
-#     if names in top_ten_names[:-1]:
-#         print(names, end = ' | ')
-#     else:
-#         print(names)
+
 #
 # print()
 
@@ -90,11 +153,11 @@ print(norway_names)
 #
 # for name in finland_names:
 #     for index, value in enumerate(finland_names):
-#         print(value, end=" | ")
+#         print(*value, end=" | ")
 #     else:
 #         print( end=" ")
 #     print()
-
+#
 # norway_names = set(norway_names)
 # print(norway_names)
 
