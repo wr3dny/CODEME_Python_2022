@@ -1,31 +1,28 @@
-# filename = 'text_inwo.txt'
-# try:
-#     with open(filename, 'r') as f:
-#         content = f.read()
-# except FileExistsError:
-#     print('Plik już istnieje')
-#     print(content)
+import random
 
-with open('save.txt', 'w') as f:
-  f.write('Line 1\n')
-  f.write('Line 2\n')
-  f.write('Line 3\n')
-  f.write('Line 4\n')
-  f.write('End')
+def get_quote(filename):
+    with open(f'{filename}.txt', encoding='utf-8') as fopen:
+        content = fopen.readlines()
 
-sweets_list = ['choco', 'sugar', 'cookies']
-
-with open('new.txt', 'w') as f:
-  f.write
+    quote = random.choice(content)
+    return quote
 
 
-# filename = 'save.txt'
-# try:
-#     with open(filename, 'r') as f:
-#         content = f.read()
-# except FileExistsError:
-#     print('Plik już istnieje')
-#     print(content)
+def show(quote):
+    quote = quote.strip('\n')
+    quote = quote.split(' - ') # [cytat, autor]
+    lenth = len(quote[0]) + 20
+
+    print('\nQuote of the day is:\n')
+    print('*' * lenth)
+    print(quote[0].center(lenth))
+    print(f'~ {quote[1]} ~'.center(lenth))
+    print('*' * lenth)
 
 
+def main():
+    filename = input("Your file name: ")
+    quote = get_quote(filename)
+    show(quote)
 
+main()

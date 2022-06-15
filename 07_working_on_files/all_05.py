@@ -16,7 +16,7 @@ def find_longest_word(words):
 
 
 def main():
-    with open('pan_tadeusz.txt') as fopen:
+    with open('text_inwo.txt', encoding='UTF-8') as fopen:
         content = fopen.read()
 
     content = remove_extras(content)
