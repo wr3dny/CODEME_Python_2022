@@ -7,13 +7,30 @@ def get_list(filename):
 
 
 def list_to_str(name):
-    clean_name = [items.split(' ') for items in name]
+    clean_name = [items.split('\n') for items in name]
     print(clean_name)
     clean_name = [i.strip() for sublist in clean_name for i in sublist]
     print(clean_name)
-    clean_name = clean_name.join(' ')
+    clean_name = ' '.join(clean_name)
     print(clean_name)
-
+    clean_name = clean_name.replace('0', ' ')
+    clean_name = clean_name.replace('1', ' ')
+    clean_name = clean_name.replace('2', ' ')
+    clean_name = clean_name.replace('3', ' ')
+    clean_name = clean_name.replace('4', ' ')
+    clean_name = clean_name.replace('5', ' ')
+    clean_name = clean_name.replace('6', ' ')
+    clean_name = clean_name.replace('7', ' ')
+    clean_name = clean_name.replace('8', ' ')
+    clean_name = clean_name.replace('9', ' ')
+    clean_name = clean_name.replace(',', ' ')
+    clean_name = clean_name.strip(' ')
+    print(clean_name)
+    # j = 0
+    # while j in range(0-10):
+    #     clean_name = clean_name.replace(str(j), ' ')
+    #     j += 1
+    #     print(clean_name)
     pass
 
     # name = quote.join('')
