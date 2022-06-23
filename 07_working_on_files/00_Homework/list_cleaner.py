@@ -24,7 +24,7 @@ def list_to_str(name):
     clean_name = clean_name.replace('8', ' ')
     clean_name = clean_name.replace('9', ' ')
     clean_name = clean_name.replace(',', ' ')
-    clean_name = clean_name.strip(' ')
+    clean_name = clean_name.removesuffix('   ')
     print(clean_name)
     # j = 0
     # while j in range(0-10):
