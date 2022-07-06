@@ -5,3 +5,4 @@ def sum_natural_recuration(n):
     return n + sum_natural_recuration(n - 1)
 
 print(sum_natural_recuration(10))
+
