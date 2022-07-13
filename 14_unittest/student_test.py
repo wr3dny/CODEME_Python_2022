@@ -34,7 +34,6 @@ class TestStudent(unittest.TestCase):
         self.ex_student2.last = 'Targaryan'
         self.assertEqual(self.ex_student2.fullname, 'Jon Targaryan')
 
-
     def test_grant_scholarship_succes(self):
 
         self.ex_student1.grant_scholarship()
