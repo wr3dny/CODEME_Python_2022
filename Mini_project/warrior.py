@@ -1,7 +1,6 @@
 class Warrior:
-    def __init__(self,hp):
+    def __init__(self):
         self.xp = 0
-        self.hp = hp
 
     def __repr__(self):
         name = self.__class__.__name__

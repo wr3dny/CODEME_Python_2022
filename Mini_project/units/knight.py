@@ -4,7 +4,7 @@ from warrior import Warrior
 class Knight(Warrior):
     def __init__(self):
         super().__init__()
-        self.hp = 60
+
 
     def attack(self):
         print(f'Knight: I have swing my sword')

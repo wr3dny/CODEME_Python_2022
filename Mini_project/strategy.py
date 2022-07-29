@@ -8,34 +8,30 @@ archers = []
 for _ in range(4):
     knights.append(Knight())
 
-print(knights)
+knights.append(Knight())
 
-# knights.append(Knight())
+for _ in range(6):
+    archers.append(Archer())
 
 for Knight in knights:
     Knight.march(2000)
-
-# knights.append(Knight())
-
-for Knight in knights:
     Knight.attack()
 
-print(knights)
 
 
-for _ in range(3):
-    archers.append((Archer(50)))
+for Archer in archers:
+    Archer.attack()
 
-
-print(archers)
+#knights.append(Knight(60))
 
 army = knights + archers
 
+for Knight in army:
+    for Archer in army:
+        Knight.attack()
+        Archer.attack()
 
-for warrior in army:
-    warrior.attack()
 
-print(army)
 
 
 def main():

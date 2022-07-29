@@ -2,9 +2,8 @@ from warrior import Warrior
 
 
 class Archer(Warrior):
-    def __init__(self, hp):
+    def __init__(self):
         super().__init__()
-        hp = 50
         self.quiver = 24
 
     def attack(self):
